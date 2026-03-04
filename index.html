@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CloudDesk - チームの生産性を10倍にする</title>
+<title>CloudDesk - SaaS課金システム</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -252,38 +252,38 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;po
 
 <!-- Hero -->
 <section class="hero">
-  <div class="hero-badge">🚀 2026年最も注目されるSaaS</div>
-  <h1>チームの生産性を<br>10倍にする</h1>
-  <p>プロジェクト管理、タスク追跡、リアルタイムコラボレーション。<br>すべてを一つのプラットフォームで。</p>
+  <div class="hero-badge">外注すれば50万円超の機能を実装済み</div>
+  <h1>Stripe決済を組み込んだ<br>SaaS課金システム</h1>
+  <p>料金プラン・チェックアウト・サブスク管理を完全実装。<br>すぐに使えるSaaS課金の基盤を、そのままお届けします。</p>
   <div class="hero-buttons">
     <a href="#pricing" class="btn-primary">プランを選ぶ</a>
     <button class="btn-secondary" onclick="document.getElementById('dashboard').scrollIntoView({behavior:'smooth'})">デモを見る</button>
   </div>
   <div class="stats">
-    <div class="stat"><div class="stat-num">12,000+</div><div class="stat-label">アクティブチーム</div></div>
-    <div class="stat"><div class="stat-num">99.9%</div><div class="stat-label">稼働率</div></div>
-    <div class="stat"><div class="stat-num">4.9/5</div><div class="stat-label">ユーザー評価</div></div>
+    <div class="stat"><div class="stat-num">Stripe</div><div class="stat-label">決済連携</div></div>
+    <div class="stat"><div class="stat-num">3機能</div><div class="stat-label">料金・チェックアウト・サブスク完全実装</div></div>
+    <div class="stat"><div class="stat-num">50万円超</div><div class="stat-label">外注時の相場</div></div>
   </div>
 </section>
 
 <!-- Pricing -->
 <section id="pricing">
   <div class="section-title fade-up">
-    <h2>シンプルな料金プラン</h2>
-    <p>チームの規模に合わせて最適なプランをお選びください。すべてのプランに14日間の無料トライアル付き。</p>
+    <h2>すぐ使える料金プラン機能</h2>
+    <p>実装済みの料金プラン・チェックアウト・サブスク管理。あなたのSaaSにそのまま組み込めます。</p>
   </div>
   <div class="pricing-grid">
 
     <div class="price-card fade-up">
       <div class="plan-name">Free</div>
       <div class="plan-price">¥0<span>/月</span></div>
-      <div class="plan-desc">小規模チームに最適なスタータープラン</div>
+      <div class="plan-desc">実装済みの無料プラン例</div>
       <ul class="plan-features">
-        <li>5ユーザーまで</li>
-        <li>基本機能</li>
-        <li>メールサポート</li>
-        <li>5GBストレージ</li>
-        <li>基本レポート</li>
+        <li>Stripe Checkout連携</li>
+        <li>料金プラン表示</li>
+        <li>サブスク管理基盤</li>
+        <li>カード決済対応</li>
+        <li>デモ用実装</li>
       </ul>
       <button class="plan-btn plan-btn-outline" onclick="openCheckout('Free','¥0','free')">無料で始める</button>
     </div>
@@ -292,14 +292,14 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;po
       <div class="popular-badge">🔥 人気No.1</div>
       <div class="plan-name">Pro</div>
       <div class="plan-price">¥4,980<span>/月</span></div>
-      <div class="plan-desc">成長するチームのための高機能プラン</div>
+      <div class="plan-desc">実装済みの有料プラン例</div>
       <ul class="plan-features">
-        <li>50ユーザーまで</li>
-        <li>全機能アクセス</li>
-        <li>優先サポート</li>
-        <li>API連携</li>
-        <li>カスタムダッシュボード</li>
-        <li>50GBストレージ</li>
+        <li>月額サブスクリプション</li>
+        <li>Stripe決済完全連携</li>
+        <li>顧客ポータル</li>
+        <li>プラン変更・解約</li>
+        <li>請求履歴管理</li>
+        <li>Webhook対応</li>
       </ul>
       <button class="plan-btn plan-btn-fill" onclick="openCheckout('Pro','¥4,980','pro')">このプランを選択</button>
     </div>
@@ -307,14 +307,14 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;po
     <div class="price-card fade-up" style="transition-delay:.2s">
       <div class="plan-name">Enterprise</div>
       <div class="plan-price">¥19,800<span>/月</span></div>
-      <div class="plan-desc">大規模組織のためのエンタープライズプラン</div>
+      <div class="plan-desc">実装済みのエンタープライズ例</div>
       <ul class="plan-features">
-        <li>無制限ユーザー</li>
-        <li>専任サポート</li>
-        <li>SLA保証 (99.99%)</li>
-        <li>SSO / SAML連携</li>
-        <li>カスタム開発対応</li>
-        <li>無制限ストレージ</li>
+        <li>年額・月額切り替え</li>
+        <li>複数プラン管理</li>
+        <li>顧客専用サポート</li>
+        <li>カスタム請求</li>
+        <li>詳細 analytics</li>
+        <li>API完全対応</li>
       </ul>
       <button class="plan-btn plan-btn-outline" onclick="openCheckout('Enterprise','¥19,800','enterprise')">このプランを選択</button>
     </div>
@@ -325,8 +325,8 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;po
 <!-- Feature Table -->
 <section id="features">
   <div class="section-title fade-up">
-    <h2>機能比較</h2>
-    <p>各プランの詳細な機能比較をご確認ください</p>
+    <h2>実装済み機能一覧</h2>
+    <p>Stripe決済を組み込んだSaaS課金に必要な機能をすべて実装済み</p>
   </div>
   <div class="feature-table-wrap fade-up">
     <table class="feature-table">
@@ -339,17 +339,17 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;po
         </tr>
       </thead>
       <tbody>
-        <tr><td>ユーザー数</td><td>5人</td><td>50人</td><td>無制限</td></tr>
-        <tr><td>プロジェクト数</td><td>3</td><td>無制限</td><td>無制限</td></tr>
-        <tr><td>ストレージ</td><td>5GB</td><td>50GB</td><td>無制限</td></tr>
-        <tr><td>タスク管理</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
-        <tr><td>ガントチャート</td><td class="dash">—</td><td class="check">✓</td><td class="check">✓</td></tr>
-        <tr><td>カスタムダッシュボード</td><td class="dash">—</td><td class="check">✓</td><td class="check">✓</td></tr>
-        <tr><td>API連携</td><td class="dash">—</td><td class="check">✓</td><td class="check">✓</td></tr>
-        <tr><td>SSO / SAML</td><td class="dash">—</td><td class="dash">—</td><td class="check">✓</td></tr>
-        <tr><td>SLA保証</td><td class="dash">—</td><td class="dash">—</td><td class="check">✓</td></tr>
-        <tr><td>カスタム開発</td><td class="dash">—</td><td class="dash">—</td><td class="check">✓</td></tr>
-        <tr><td>サポート</td><td>メール</td><td>優先</td><td>専任</td></tr>
+        <tr><td>料金プラン表示</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Stripe Checkout</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>カード決済</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>月額サブスク</td><td class="dash">—</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>年額サブスク</td><td class="dash">—</td><td class="dash">—</td><td class="check">✓</td></tr>
+        <tr><td>プラン変更・解約</td><td class="dash">—</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>顧客ポータル</td><td class="dash">—</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>請求履歴</td><td class="dash">—</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Webhook連携</td><td class="dash">—</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>API完全対応</td><td class="dash">—</td><td class="dash">—</td><td class="check">✓</td></tr>
+        <tr><td>カスタム請求</td><td class="dash">—</td><td class="dash">—</td><td class="check">✓</td></tr>
       </tbody>
     </table>
   </div>
@@ -358,8 +358,8 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;po
 <!-- Dashboard Preview -->
 <section id="dashboard">
   <div class="section-title fade-up">
-    <h2>直感的なダッシュボード</h2>
-    <p>チームの進捗をリアルタイムで把握。美しく、使いやすいインターフェース。</p>
+    <h2>サブスク管理ダッシュボード</h2>
+    <p>収益・顧客・サブスクリプションを一元管理。実装済みの管理画面イメージ。</p>
   </div>
   <div class="dash-container fade-up">
     <div class="dash-topbar">
@@ -369,38 +369,38 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;po
           <div class="dash-dot" style="background:#eab308"></div>
           <div class="dash-dot" style="background:#22c55e"></div>
         </div>
-        <div class="dash-topbar-title">CloudDesk ダッシュボード</div>
+        <div class="dash-topbar-title">CloudDesk サブスク管理</div>
       </div>
     </div>
     <div class="dash-body">
       <div class="dash-sidebar">
-        <div class="dash-nav-item active">📊 ダッシュボード</div>
-        <div class="dash-nav-item">📋 プロジェクト</div>
-        <div class="dash-nav-item">✅ タスク</div>
-        <div class="dash-nav-item">👥 メンバー</div>
-        <div class="dash-nav-item">📈 レポート</div>
-        <div class="dash-nav-item">⚙️ 設定</div>
+        <div class="dash-nav-item active">📊 収益ダッシュボード</div>
+        <div class="dash-nav-item">👥 顧客管理</div>
+        <div class="dash-nav-item">💳 サブスクリプション</div>
+        <div class="dash-nav-item">📄 請求履歴</div>
+        <div class="dash-nav-item">📈 料金プラン</div>
+        <div class="dash-nav-item">⚙️ Stripe連携</div>
       </div>
       <div class="dash-main">
         <div class="dash-stats">
           <div class="dash-stat-card">
-            <div class="dash-stat-label">アクティブタスク</div>
-            <div class="dash-stat-value">248</div>
+            <div class="dash-stat-label">MRR（月間経常収益）</div>
+            <div class="dash-stat-value">¥248,000</div>
             <div class="dash-stat-change up">↑ 12% 先月比</div>
           </div>
           <div class="dash-stat-card">
-            <div class="dash-stat-label">完了率</div>
-            <div class="dash-stat-value">87.3%</div>
-            <div class="dash-stat-change up">↑ 5.2% 先月比</div>
+            <div class="dash-stat-label">アクティブサブスク</div>
+            <div class="dash-stat-value">87</div>
+            <div class="dash-stat-change up">↑ 5件 今月</div>
           </div>
           <div class="dash-stat-card">
-            <div class="dash-stat-label">チームメンバー</div>
+            <div class="dash-stat-label">新規顧客（今月）</div>
             <div class="dash-stat-value">34</div>
-            <div class="dash-stat-change up">↑ 3名 今月</div>
+            <div class="dash-stat-change up">↑ 3件 先週比</div>
           </div>
         </div>
         <div class="dash-chart">
-          <div class="dash-chart-title">週間タスク完了数</div>
+          <div class="dash-chart-title">月別収益推移</div>
           <div class="chart-bars" id="chartBars"></div>
         </div>
       </div>
@@ -421,7 +421,7 @@ footer{border-top:1px solid var(--border);padding:48px 24px;text-align:center;po
       <a href="#">特定商取引法に基づく表記</a>
       <a href="#">お問い合わせ</a>
     </div>
-    <p class="footer-note">※ これはバイブコーディングで作成されたデモアプリです。実際の決済は行われません。</p>
+    <p class="footer-note">※ これはSaaS課金システムのデモです。実際の決済は行われません。Stripe連携で本番環境にも対応可能。</p>
   </div>
 </footer>
 
